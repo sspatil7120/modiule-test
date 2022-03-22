@@ -1,0 +1,8 @@
+.camera-preview {
+    display: flex;
+    justify-content: center;
+}
+
+.camera-preview {
+    width: 40%;
+}

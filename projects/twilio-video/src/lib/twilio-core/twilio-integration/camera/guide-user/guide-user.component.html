@@ -1,0 +1,16 @@
+<div class="enable-camera">
+    <div class="webcam-icon"><i class="fas fa-webcam"></i></div>
+    <div class="msg-container">
+        <span class="msg-one">Camera & Microphone Needed</span><br />
+        <span class="msg-two">Get ready for your close up</span>
+    </div>
+</div>
+
+<div *ngIf="showTooltip && browser != 'NA'" [ngClass]="{
+    'setting-tooltip': browser == 'chrome',
+    'setting-tooltip-safari': browser == 'safari',
+    'setting-tooltip-firefox': browser == 'firefox'
+  }">
+    <div class="arrow-up"></div>
+    <div class="tooltip-text">Click Allow</div>
+</div>

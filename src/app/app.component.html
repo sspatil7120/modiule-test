@@ -1,0 +1,11 @@
+<div class="panel">
+    <div *ngIf="!isTwilioView" class="panel-notification-container">
+        <h1>Visit Twilio Video...</h1>
+        <button class="button button1" (click)="onVisitTwilioVideo()">Visit</button>
+    </div>
+    <div *ngIf="isTwilioView" class="panel-video-container">
+        <lib-twilio-video host="">
+        </lib-twilio-video>
+        <button class="button button1" (click)="onVisitTwilioVideo()">Proceed</button>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div [ngClass]="{'camera-blocked-safari': browser == 'safari', 'camera-blocked': browser != 'safari'}">
+    <div class="webcam-icon"><i class="fas fa-webcam-slash"></i></div>
+    <div class="msg-container">
+        <span class="title">Camera & Microphone Blocked</span><br>
+
+        <div *ngIf="browser != 'safari' && browser != 'NA'" class="msg-one">To continue with your appointment, you will
+            need to allow access to your webcam.</div>
+        <div *ngIf="browser != 'safari' && browser != 'NA'" class="steps">
+            <div class="msg-two">Enable Your Webcam & Microphone</div>
+
+            <div class="step step-one">
+                <i class="fa fa-lock step-one-icon" aria-hidden="true"></i>
+                <span>Click the lock icon</span>
+            </div>
+
+            <div class="step step-two">
+                <i class="fa fa-webcam step-two-icon" aria-hidden="true"></i>
+                <span style="position: relative;
+          left: 0.3rem;">Allow access to the</span><br>
+                <span style="position: relative;
+          left: 1.9rem;">camera and microphone</span>
+            </div>
+            <div class="step step-three">
+                <i class="fa fa-redo step-three-icon" aria-hidden="true"></i>
+                <span style="position: relative;
+          right: 0.3rem;">Refresh the page</span>
+            </div>
+
+        </div>
+        <div *ngIf="browser == 'safari' || browser == 'NA'" class="safari-blocked">
+            Please refresh your page and click allow to enable your webcam in order to continue with your appointment
+        </div>
+
+        <div class="footer">
+            <a href="" target="_blank" class="need-help-link">Need Help?</a>
+        </div>
+
+    </div>
+
+</div>
+
+<div *ngIf="browser != 'safari' && browser != 'NA'"
+    [ngClass]="{'setting-tooltip': browser == 'chrome', 'setting-tooltip-firefox': browser == 'firefox'}">
+    <div class="arrow-up"></div>
+    <div class="tooltip-text">Click the lock and allow the webcam and microphone</div>
+</div>

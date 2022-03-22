@@ -1,0 +1,95 @@
+.enable-camera {
+    border: 2px solid;
+    height: 18vw;
+    text-align: center;
+    background: #19831d;
+    width: 40%;
+}
+
+.webcam-icon {
+    position: relative;
+    top: 1.2rem;
+    height: auto;
+}
+
+.webcam-icon i {
+    color: #5e7792;
+    font-size: 3rem;
+}
+
+.msg-container {
+    position: relative;
+    top: 2.5rem;
+}
+
+.msg-container .msg-one {
+    color: #5e7792;
+    font-size: 1.5rem;
+}
+
+.msg-container .msg-two {
+    color: #c3d6d6;
+    font-size: 1rem;
+}
+
+.a-play {
+    border: 1px solid #ddd;
+    width: 265px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 90px;
+    display: inline-block;
+    font-size: 20px;
+    /* margin-right: 10px; */
+    background: white;
+    font-weight: 600;
+}
+
+.setting-tooltip {
+    width: 12rem;
+    height: 3rem;
+    background: #5e7792;
+    position: absolute;
+    top: 12rem;
+    left: 19.5rem;
+    border-radius: 11px;
+}
+
+.setting-tooltip-safari {
+    width: 12rem;
+    height: 3rem;
+    background: #5e7792;
+    position: absolute;
+    top: 10rem;
+    left: 36rem;
+    border-radius: 11px;
+}
+
+.setting-tooltip-firefox {
+    width: 12rem;
+    height: 3rem;
+    background: #5e7792;
+    position: absolute;
+    top: 15rem;
+    left: 28.5rem;
+    border-radius: 11px;
+}
+
+.arrow-up {
+    position: absolute;
+    top: -1rem;
+    left: 5.5rem;
+    width: 0px;
+    height: 8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #5e7792;
+}
+
+.tooltip-text {
+    color: #ededed;
+    position: absolute;
+    top: 1.0rem;
+    left: 3.5rem;
+    font-size: 14px;
+}

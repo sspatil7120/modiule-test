@@ -1,0 +1,5 @@
+.waiting-room {
+    height: 90vh;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom right, #DAE6F3, #5e7792);
+}
